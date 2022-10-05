@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
     price: 109.95,
