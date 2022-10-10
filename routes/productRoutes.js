@@ -4,6 +4,6 @@ import { authenticate } from "../middleware/authenticate.js";
 
 const router = express.Router();
 
-router.get("/", authenticate, getProducts);
+router.get("/", getProducts);
 
 export default router;
