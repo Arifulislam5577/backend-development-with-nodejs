@@ -24,7 +24,6 @@ app.use("/api/v1/products", productRouter);
 app.use("/api/v1/users", authRouter);
 
 app.post("/upload", async (req, res, next) => {
-  console.log(req.body);
   try {
     const { height, width, src } = req.body;
     const folder = "/testing";
