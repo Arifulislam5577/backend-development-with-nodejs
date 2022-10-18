@@ -11,6 +11,9 @@ export const getProducts = async (req, res, next) => {
 
 export const createProduct = async (req, res, next) => {
   const { title, price, image } = req.body;
+
+  console.log(req.body);
+
   try {
     const imgUrl = await uplaodImg(image);
     const product = new PRODUCT({
